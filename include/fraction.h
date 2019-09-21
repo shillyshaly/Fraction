@@ -16,7 +16,7 @@ private:
 
 public:
     Fraction();
-    double getRealValues();
+    double getRealValue();
     int64_t getDenominator() const;
     void setDenominator(int64_t);
     uint64_t getNumerator() const;

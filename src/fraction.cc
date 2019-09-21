@@ -2,7 +2,7 @@
 #include <cstdint>
 #include <iostream>
 using namespace std;
-using namespace edu::vcccd::vc::csv13;
+//using namespace edu::vcccd::vc::csv13;
 
 Fraction::Fraction(){          //Constructor initializing data members.
     realValue = 0.0;
@@ -10,7 +10,7 @@ Fraction::Fraction(){          //Constructor initializing data members.
     numerator = 0.0;
 }
 
-double Fraction::getRealValues() {          //Returns original values from user.
+double Fraction::getRealValue() {          //Returns original values from user.
     realValue = (double)numerator/(double)denominator;
     return realValue;
 }
