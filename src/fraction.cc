@@ -6,8 +6,8 @@ using namespace std;
 
 Fraction::Fraction(){          //Constructor initializing data members.
     realValue = 0.0;
-    denominator = 0.0;
-    numerator = 0.0;
+    denominator = 0;
+    numerator = 0;
 }
 
 double Fraction::getRealValue() {          //Returns original values from user.
