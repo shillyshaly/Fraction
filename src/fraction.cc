@@ -42,10 +42,11 @@ void Fraction::output() {                                               //finds 
         cout << "INF" << endl;
     }else {
         gcd = abs(__gcd(a, b));
-    }
-
         numerator = numerator / gcd;
         denominator = denominator / gcd;
 
-        cout  << numerator << " / " << denominator << endl;
+        cout  << numerator << " / " << denominator;
+    }
+
+
 }
