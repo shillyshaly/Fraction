@@ -3,12 +3,12 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+using namespace edu::vcccd::vc::csv15;
 
-
-Fraction::Fraction(){          //Constructor initializing data members.
+Fraction::Fraction(uint64_t userNumerator, int64_t userDenominator){          //Constructor initializing data members.
     realValue = 0.0;
-    denominator = 0;
-    numerator = 0;
+    denominator = userDenominator;
+    numerator = userNumerator;
 }
 
 double Fraction::getRealValue() {          //Returns original values from user.
@@ -16,12 +16,12 @@ double Fraction::getRealValue() {          //Returns original values from user.
     return realValue;
 }
 
-void Fraction::setNumerator(uint64_t userNumerator) {         //sets user input as NUMERATOR
-    numerator = userNumerator;
+void Fraction::setNumerator(uint64_t numerator) {         //sets user input as NUMERATOR
+
 }
 
-void Fraction::setDenominator(int64_t userDenominator ) {        //sets user input as DENOMINATOR
-    denominator = userDenominator;
+void Fraction::setDenominator(int64_t denominator ) {        //sets user input as DENOMINATOR
+
 }
 
 uint64_t Fraction::getNumerator() const {       //return the entered numerator in lowest terms
