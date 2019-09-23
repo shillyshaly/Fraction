@@ -2,29 +2,14 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="Docker Host (1168f6d9-bd83-4571-86f0-5bea08f3e560)">
+      <paths name="Docker Host (a66f5a39-da96-43ec-91b0-1bafa82bde05)">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/tmp.zaa0Pej6LX" local="$PROJECT_DIR$" />
+            <mapping deploy="/tmp/tmp.qPdHCgLFdo" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
           </excludedPaths>
-        </serverdata>
-      </paths>
-      <paths name="Docker Host (4413611e-0d40-4699-add4-8b9ed505b6a1)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Docker Host (5a92488d-c0dd-46b5-9b96-d70a749e40b7)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
         </serverdata>
       </paths>
     </serverData>

@@ -1,8 +1,9 @@
 #include "fraction.h"
 #include <cstdint>
 #include <iostream>
+#include <algorithm>
 using namespace std;
-using edu::vcccd::vc::csv15::Fraction;
+
 
 Fraction::Fraction(){          //Constructor initializing data members.
     realValue = 0.0;
@@ -31,7 +32,7 @@ int64_t Fraction::getDenominator() const {      //return the entered denominator
 }
 
 void Fraction::output() {                                               //finds GCD and divides each entry by it
-    int64_t a = numerator, b = denominator, temp = 0, gcd = 0;          //reducing input to lowest form
+    int64_t a = numerator, b = denominator, gcd = 0;          //reducing input to lowest form
 
     if ((b == 0) && (a == 0)) {
         cout << "NAN" << endl;
@@ -39,17 +40,12 @@ void Fraction::output() {                                               //finds 
         cout << 0 << endl;
     }else if (b == 0){
         cout << "INF" << endl;
-    }else{
-        while(b > 0) {
-            temp = b;
-            b = a % b;
-            a = temp;
-        }
-        gcd = a;
+    }else {
+        gcd = abs(__gcd(a, b));
+    }
 
         numerator = numerator / gcd;
         denominator = denominator / gcd;
 
         cout  << numerator << " / " << denominator << endl;
-    }
 }
