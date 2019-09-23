@@ -35,11 +35,11 @@ void Fraction::output() {                                               //finds 
     int64_t a = numerator, b = denominator, gcd = 0;          //reducing input to lowest form
 
     if ((b == 0) && (a == 0)) {
-        cout << "NAN" << endl;
+        cout << "NAN";
     }else if (a == 0){
-        cout << 0 << endl;
+        cout << 0;
     }else if (b == 0){
-        cout << "INF" << endl;
+        cout << "INF";
     }else {
         gcd = abs(__gcd(a, b));
         numerator = numerator / gcd;
