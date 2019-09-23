@@ -4,7 +4,7 @@
 
 #ifndef CLASSPRACTICE_FRACTION_H
 #define CLASSPRACTICE_FRACTION_H
-
+using edu::vcccd::vc::csv15::Fraction;
 
 #include <cstdint>
 
